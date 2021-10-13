@@ -98,6 +98,62 @@ body {
     .progress-bar__degree:last-child {
       border-right: 2px solid #dfe0e0; }
 
+.urine-color {
+  margin-top: 32px;
+  line-height: 26.5px; }
+  .urine-color__title {
+    font-family: 'Coloplast-Bold', arial, sans-serif;
+    font-size: 18.5px;
+    margin-bottom: 8px; }
+  .urine-color__wrapper {
+    border-bottom: 1px solid #dfe0e0;
+    margin-bottom: 21px; }
+  .urine-color__label {
+    width: 110px;
+    float: left;
+    color: #6c6f70;
+    font-size: 13.5px; }
+  .urine-color__measures {
+    float: left;
+    padding-bottom: 25px; }
+  .urine-color__color-wrapper {
+    border: 1px solid #e2e2e2;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+    position: relative; }
+  .urine-color__color {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15.5%;
+    left: 15.5%; }
+    .urine-color__color--first {
+      background-color: #fbf8cd; }
+    .urine-color__color--second {
+      background-color: #faeaab; }
+    .urine-color__color--third {
+      background-color: #f6d359; }
+    .urine-color__color--forth {
+      background-color: #f6bc07; }
+    .urine-color__color--fifth {
+      background-color: #f3a104; }
+    .urine-color__color--sixth {
+      background-color: #eb8405; }
+    .urine-color__color--seventh {
+      background-color: #de770d; }
+    .urine-color__color--eighth {
+      background-color: #bb6417; }
+  .urine-color__number {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    color: #2e3233; }
+
 @-webkit-keyframes animate-positive {
   0% {
     width: 0%; } }

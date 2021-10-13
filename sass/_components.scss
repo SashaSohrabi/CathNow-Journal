@@ -92,6 +92,78 @@
   }
 }
 
+.urine-color {
+  margin-top: 32px;
+  line-height: 26.5px;
+  &__title {
+    font-family: 'Coloplast-Bold', arial, sans-serif;
+    font-size: 18.5px;
+    margin-bottom: 8px;
+  }
+  &__wrapper {
+    border-bottom: 1px solid $iron;
+    margin-bottom: 21px;
+  }
+  &__label {
+    width: 110px;
+    float: left;
+    color: $nevada;
+    font-size: 13.5px;
+  }
+  &__measures {
+    float: left;
+    padding-bottom: 25px;
+  }
+  &__color-wrapper {
+    border: 1px solid $mercury;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 4px;
+    vertical-align: middle;
+    position: relative;
+  }
+  &__color {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15.5%;
+    left: 15.5%;
+    &--first {
+      background-color: $double-pearl-lusta;
+    }
+    &--second {
+      background-color: $banana-mania;
+    }
+    &--third {
+      background-color: $cream-can;
+    }
+    &--forth {
+      background-color: $corn;
+    }
+    &--fifth {
+      background-color: $california;
+    }
+    &--sixth {
+      background-color: $tahiti-gold;
+    }
+    &--seventh {
+      background-color: $christine;
+    }
+    &--eighth {
+      background-color: $orange-roughy;
+    }
+  }
+  &__number {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    color: $outer-space;
+  }
+}
+
 @-webkit-keyframes animate-positive {
   0% {
     width: 0%;
