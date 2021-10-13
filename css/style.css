@@ -1,8 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Coloplast';
+  src: url("../assets/fonts/Coloplast.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Coloplast-Bold';
+  src: url("../assets/fonts/Coloplast-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype"); }
 
 body {
   background-color: #ffffff; }
@@ -12,9 +23,12 @@ body {
   margin: auto; }
 
 .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: table; }
+
+.cath-now__title {
+  font-family: 'Coloplast'; }
 
 .progress-bar {
   margin-top: 50px;
