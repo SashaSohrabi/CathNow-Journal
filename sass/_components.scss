@@ -92,7 +92,7 @@
   }
 }
 
-.urine-color {
+.urine-color, .leakage {
   margin-top: 32px;
   line-height: 26.5px;
   &__title {
@@ -108,11 +108,15 @@
     width: 110px;
     float: left;
     color: $nevada;
+    font-family: 'Roboto-Regular', sans-serif;
     font-size: 13.5px;
   }
   &__measures {
     float: left;
     padding-bottom: 25px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    color: $outer-space;
   }
   &__color-wrapper {
     border: 1px solid $mercury;
@@ -121,6 +125,7 @@
     height: 18px;
     border-radius: 50%;
     margin-right: 4px;
+    margin-top: -2px;
     vertical-align: middle;
     position: relative;
   }
@@ -130,8 +135,8 @@
     height: 11px;
     border-radius: 50%;
     position: absolute;
-    top: 15.5%;
-    left: 15.5%;
+    top: 16%;
+    left: 16%;
     &--first {
       background-color: $double-pearl-lusta;
     }
@@ -157,10 +162,38 @@
       background-color: $orange-roughy;
     }
   }
+}
+
+.leakage {
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__label {
+    font-weight: bold;
+    background-color: $wild-sand;
+    width: 66px;
+    height: 26.5px;
+    line-height: 26.5px;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 44px;
+  }
+
+  &__icon {
+    width: 21px;
+    margin-right: 7px;
+    vertical-align: middle;
+  }
+
   &__number {
-    font-family: 'Roboto-Regular', sans-serif;
+    height: 25px;
+  }
+
+  &__desc {
+    line-height: 25px;
+    vertical-align: middle;
     font-size: 16px;
-    color: $outer-space;
   }
 }
 
