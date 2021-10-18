@@ -1,4 +1,4 @@
-// CatNow 
+// CatNow
 .cath-now {
   margin-top: 80px;
   color: $outer-space;
@@ -95,7 +95,8 @@
 
 // Urine color, Leakage
 .urine-color,
-.leakage, .uti {
+.leakage,
+.uti {
   margin-top: 32px;
   line-height: 26.5px;
   &__title {
@@ -171,7 +172,8 @@
 }
 
 // Leakage
-.leakage {
+.leakage,
+.uti {
   &__title {
     margin-bottom: 16px;
   }
@@ -189,6 +191,7 @@
 
   &__icon {
     width: 21px;
+    height: 21px;
     margin-right: 9px;
     vertical-align: middle;
   }
@@ -204,6 +207,19 @@
   }
 }
 
-
-
-
+.uti {
+  &__label {
+    vertical-align: top;
+  }
+  &__desc {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    color: $outer-space;
+    opacity: 0.9;
+    padding-bottom: 20px;
+  }
+  &__symptom--s {
+    color: $nevada;
+    font-size: 13.5px;
+  }
+}

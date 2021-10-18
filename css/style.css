@@ -127,37 +127,44 @@ tr.margin-top td {
       border-right: 2px solid #dfe0e0; }
 
 .urine-color,
-.leakage, .uti {
+.leakage,
+.uti {
   margin-top: 32px;
   line-height: 26.5px; }
   .urine-color__title,
-  .leakage__title, .uti__title {
+  .leakage__title,
+  .uti__title {
     font-family: 'Coloplast-Bold', arial, sans-serif;
     font-size: 18.5px;
     margin-bottom: 8px; }
   .urine-color__wrapper,
-  .leakage__wrapper, .uti__wrapper {
+  .leakage__wrapper,
+  .uti__wrapper {
     border-bottom: 1px solid #dfe0e0;
     margin-bottom: 21px; }
   .urine-color__label,
-  .leakage__label, .uti__label {
+  .leakage__label,
+  .uti__label {
     width: 110px;
     float: left;
     color: #6c6f70;
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 13.5px; }
   .urine-color__measures,
-  .leakage__measures, .uti__measures {
+  .leakage__measures,
+  .uti__measures {
     float: left;
     padding-bottom: 25px; }
   .urine-color__number,
-  .leakage__number, .uti__number {
+  .leakage__number,
+  .uti__number {
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 16px;
     color: #2e3233;
     opacity: 0.8; }
   .urine-color__color-wrapper,
-  .leakage__color-wrapper, .uti__color-wrapper {
+  .leakage__color-wrapper,
+  .uti__color-wrapper {
     border: 1px solid #e2e2e2;
     display: inline-block;
     width: 18px;
@@ -168,7 +175,8 @@ tr.margin-top td {
     vertical-align: middle;
     position: relative; }
   .urine-color__color,
-  .leakage__color, .uti__color {
+  .leakage__color,
+  .uti__color {
     display: inline-block;
     width: 11px;
     height: 11px;
@@ -177,34 +185,44 @@ tr.margin-top td {
     top: 16%;
     left: 16%; }
     .urine-color__color--first,
-    .leakage__color--first, .uti__color--first {
+    .leakage__color--first,
+    .uti__color--first {
       background-color: #fbf8cd; }
     .urine-color__color--second,
-    .leakage__color--second, .uti__color--second {
+    .leakage__color--second,
+    .uti__color--second {
       background-color: #faeaab; }
     .urine-color__color--third,
-    .leakage__color--third, .uti__color--third {
+    .leakage__color--third,
+    .uti__color--third {
       background-color: #f6d359; }
     .urine-color__color--forth,
-    .leakage__color--forth, .uti__color--forth {
+    .leakage__color--forth,
+    .uti__color--forth {
       background-color: #f6bc07; }
     .urine-color__color--fifth,
-    .leakage__color--fifth, .uti__color--fifth {
+    .leakage__color--fifth,
+    .uti__color--fifth {
       background-color: #f3a104; }
     .urine-color__color--sixth,
-    .leakage__color--sixth, .uti__color--sixth {
+    .leakage__color--sixth,
+    .uti__color--sixth {
       background-color: #eb8405; }
     .urine-color__color--seventh,
-    .leakage__color--seventh, .uti__color--seventh {
+    .leakage__color--seventh,
+    .uti__color--seventh {
       background-color: #de770d; }
     .urine-color__color--eighth,
-    .leakage__color--eighth, .uti__color--eighth {
+    .leakage__color--eighth,
+    .uti__color--eighth {
       background-color: #bb6417; }
 
-.leakage__title {
+.leakage__title,
+.uti__title {
   margin-bottom: 16px; }
 
-.leakage__label {
+.leakage__label,
+.uti__label {
   font-weight: bold;
   background-color: #f4f4f4;
   width: 66px;
@@ -214,15 +232,33 @@ tr.margin-top td {
   text-align: center;
   margin-right: 44px; }
 
-.leakage__icon {
+.leakage__icon,
+.uti__icon {
   width: 21px;
+  height: 21px;
   margin-right: 9px;
   vertical-align: middle; }
 
-.leakage__number {
+.leakage__number,
+.uti__number {
   height: 25px; }
 
-.leakage__desc {
+.leakage__desc,
+.uti__desc {
   line-height: 25px;
   vertical-align: middle;
   font-size: 16px; }
+
+.uti__label {
+  vertical-align: top; }
+
+.uti__desc {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 16px;
+  color: #2e3233;
+  opacity: 0.9;
+  padding-bottom: 20px; }
+
+.uti__symptom--s {
+  color: #6c6f70;
+  font-size: 13.5px; }
