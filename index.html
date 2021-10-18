@@ -13,6 +13,7 @@
         <h1 class="cath-now__title">CathNow Journal</h1>
         <div class="cath-now__date">April 2021</div>
 
+        <!-- Average Volume -->
         <div class="cath-now__avg-volume avg-volume">
           <h2 class="avg-volume__title">Avg. volume</h2>
           <div class="avg-volume__progress-bar progress-bar progress-bar--left">
@@ -59,144 +60,247 @@
 
         <div class="clearfix"></div>
 
-        <div class="cath-now__urine-color urine-color">
-          <h2 class="urine-color__title">Urine color</h2>
-          <div class="urine-color__wrapper">
-            <div class="urine-color__label">Well hydrated</div>
-            <div class="urine-color__measures">
-              <div class="urine-color__number">
+        <!-- Urine Color -->
+        <table class="cath-now__urine-color urine-color">
+          <thead>
+            <tr class="padding-bottom">
+              <td class="urine-color__title">Urine color</td>
+              <td class="width-80"></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="urine-color__label">Well hydrated</td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--first"></span>
                 </span>
                 15
-              </div>
-              <div class="urine-color__number">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--second"></span>
                 </span>
                 1
-              </div>
-              <div class="urine-color__number">
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--third"></span>
                 </span>
                 20
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+              </td>
+            </tr>
 
-          <div class="urine-color__wrapper">
-            <div class="urine-color__label">Possible dehydration</div>
-            <div class="urine-color__measures">
-              <div class="urine-color__number">
+            <tr class="padding-top">
+              <td class="urine-color__label">Possible</td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--forth"></span>
                 </span>
                 15
-              </div>
-              <div class="urine-color__number">
+              </td>
+            </tr>
+            <tr>
+              <td class="urine-color__label">dehydrationd</td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--fifth"></span>
                 </span>
                 1
-              </div>
-              <div class="urine-color__number">
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--sixth"></span>
                 </span>
                 20
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+              </td>
+            </tr>
 
-          <div class="urine-color__wrapper">
-            <div class="urine-color__label">Dehydration</div>
-            <div class="urine-color__measures">
-              <div class="urine-color__number">
+            <tr class="padding-top">
+              <td class="urine-color__label">Dehydration</td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--seventh"></span>
                 </span>
                 15
-              </div>
-              <div class="urine-color__number">
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="urine-color__number">
                 <span class="urine-color__color-wrapper">
                   <span class="urine-color__color urine-color__color--eighth"></span>
                 </span>
                 1
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-        <div class="cath-now__leakage leadage">
-          <h2 class="leakage__title">Leakage</h2>
-          <div class="leakage__wrapper">
-            <div class="leakage__label">Apr. 1</div>
-            <div class="leakage__measures">
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-small-drip.svg" alt="small icon drip" />
-                <span class="leakage__desc">Small drip</span>
-              </div>
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-visible-wet.svg" alt="visible wet icon" />
-                <span class="leakage__desc">Visible wet</span>
-              </div>
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-soaking-clothes.svg" alt="Soaking clothes icon" />
-                <span class="leakage__desc">Soaking clothes</span>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+        <!-- Leakage -->
+        <table class="cath-now__leakage leakage">
+          <thead>
+            <tr class="padding-bottom">
+              <td class="leakage__title">Leakage</td>
+              <td class="width-80"></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="leakage__label">Apr. 1</span></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-small-drip.png" alt="small icon drip" />
+                Small drip
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-visible-wet.png" alt="visible wet icon" />
+                Visible wet
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-soaking-clothes.png" alt="Soaking clothes icon" />
+                Soaking clothes
+              </td>
+            </tr>
 
-          <div class="leakage__wrapper">
-            <div class="leakage__label">Apr. 15</div>
-            <div class="leakage__measures">
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-small-drip.svg" alt="small icon drip" />
-                <span class="leakage__desc">Small drip</span>
-              </div>
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-soaking-clothes.svg" alt="Soaking clothes icon" />
-                <span class="leakage__desc">Soaking clothes</span>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+            <tr class="padding-top">
+              <td><span class="leakage__label">Apr. 15</span></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-small-drip.png" alt="small icon drip" />
+                Small drip
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-soaking-clothes.png" alt="Soaking clothes icon" />
+                Soaking clothes
+              </td>
+            </tr>
 
-          <div class="leakage__wrapper">
-            <div class="leakage__label">Apr. 16</div>
-            <div class="leakage__measures">
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-small-drip.svg" alt="small icon drip" />
-                <span class="leakage__desc">Small drip</span>
-              </div>
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-soaking-clothes.svg" alt="Soaking clothes icon" />
-                <span class="leakage__desc">Soaking clothes</span>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
+            <tr class="padding-top">
+              <td><span class="leakage__label">Apr. 16</span></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-small-drip.png" alt="small icon drip" />
+                Small drip
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-soaking-clothes.png" alt="Soaking clothes icon" />
+                Soaking clothes
+              </td>
+            </tr>
 
-          <div class="leakage__wrapper">
-            <div class="leakage__label">Apr. 17</div>
-            <div class="leakage__measures">
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-small-drip.svg" alt="small icon drip" />
-                <span class="leakage__desc">Small drip</span>
-              </div>
-              <div class="leakage__number">
-                <img class="leakage__icon" src="assets/images/svg/icon-soaking-clothes.svg" alt="Soaking clothes icon" />
-                <span class="leakage__desc">Soaking clothes</span>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-        </div>
+            <tr class="padding-top">
+              <td><span class="leakage__label">Apr. 17</span></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-small-drip.png" alt="small icon drip" />
+                Small drip
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="leakage__number">
+                <img class="leakage__icon" src="assets/images/png/icon-soaking-clothes.png" alt="Soaking clothes icon" />
+                Soaking clothes
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- UTI -->
+        <table class="cath-now__uti uti">
+          <thead>
+            <tr class="padding-bottom">
+              <td class="uti__title">UTI</td>
+              <td class="width-80"></td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td valign="top"><span class="uti__label">Apr. 1</span></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">A bad smell in urine</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">A bad smell in urine</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+            
+            <tr class="padding-top">
+              <td  valign="top"><span class="uti__label">Apr. 2</span></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">A bad smell in urine</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">I need to pass urine</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">A burning stinging pain</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+
+            <tr class="padding-top">
+              <td  valign="top"><span class="uti__label">Apr. 13</span></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">A bad smell in urine</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">I need to pass urine frequently</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+
+            <tr class="padding-top">
+              <td  valign="top"><span class="uti__label">Apr. 20</span></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">A bad smell in urine</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>
+            <tr class="border-bottom">
+              <td></td>
+              <td class="uti__desc">
+                <p class="uti__symptom">I need to pass urine frequently</p>
+                <p class="uti__symptom--s">UTI symptom</p>
+              </td>
+            </tr>   
+          </tbody>
+        </table>
       </div>
     </div>
   </body>
