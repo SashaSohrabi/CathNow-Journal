@@ -1,3 +1,4 @@
+// CatNow 
 .cath-now {
   margin-top: 80px;
   color: $outer-space;
@@ -92,7 +93,9 @@
   }
 }
 
-.urine-color, .leakage {
+// Urine color, Leakage
+.urine-color,
+.leakage, .uti {
   margin-top: 32px;
   line-height: 26.5px;
   &__title {
@@ -114,9 +117,12 @@
   &__measures {
     float: left;
     padding-bottom: 25px;
+  }
+  &__number {
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 16px;
     color: $outer-space;
+    opacity: 0.8;
   }
   &__color-wrapper {
     border: 1px solid $mercury;
@@ -124,7 +130,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    margin-right: 4px;
+    margin-right: 9px;
     margin-top: -2px;
     vertical-align: middle;
     position: relative;
@@ -164,6 +170,7 @@
   }
 }
 
+// Leakage
 .leakage {
   &__title {
     margin-bottom: 16px;
@@ -182,7 +189,7 @@
 
   &__icon {
     width: 21px;
-    margin-right: 7px;
+    margin-right: 9px;
     vertical-align: middle;
   }
 
@@ -197,13 +204,6 @@
   }
 }
 
-@-webkit-keyframes animate-positive {
-  0% {
-    width: 0%;
-  }
-}
-@keyframes animate-positive {
-  0% {
-    width: 0%;
-  }
-}
+
+
+

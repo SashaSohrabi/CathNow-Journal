@@ -1,0 +1,27 @@
+// table
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr.border-bottom td {
+  border-bottom: 1px solid $iron;
+  padding-bottom: 20px;
+}
+
+.width-80 {
+  width: 82%;
+}
+
+tr.padding-top td {
+  padding-top: 20px;
+}
+
+tr.padding-bottom td {
+  padding-bottom: 20px;
+}
+
+tr.margin-top td {
+  margin-top: 20px;
+}

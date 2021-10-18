@@ -1,0 +1,22 @@
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+/// @example
+/// strip-unit(20px); => 20
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+/// Conver px to pt unit
+/// @param {Number} $pixels - Number in pixels to be converted to points unit
+/// @return {Number} - pt
+/// @example
+/// pt(80px) => 60pt;
+@function pt($pixels) {
+
+  @return #{strip-unit($pixels) * 0.75}pt;
+}
