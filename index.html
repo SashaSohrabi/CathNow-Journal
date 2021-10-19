@@ -3,7 +3,332 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Coloplast';
+  src: url('../assets/fonts/Coloplast.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Coloplast-Bold';
+  src: url('../assets/fonts/Coloplast-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 715px;
+  margin: auto;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr.border-bottom td {
+  border-bottom: 1px solid #dfe0e0;
+  padding-bottom: 20px;
+}
+
+.width-80 {
+  width: 82%;
+}
+
+tr.padding-top td {
+  padding-top: 20px;
+}
+
+tr.padding-bottom td {
+  padding-bottom: 20px;
+}
+
+tr.margin-top td {
+  margin-top: 20px;
+}
+
+@-webkit-keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
+
+@keyframes animate-positive {
+  0% {
+    width: 0%;
+  }
+}
+
+.cath-now {
+  margin-top: 80px;
+  color: #2e3233;
+}
+.cath-now__title {
+  font-family: 'Coloplast', arial, sans-serif;
+  margin-bottom: 10px;
+}
+.cath-now__date {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 16px;
+  margin-bottom: 42px;
+}
+
+.avg-volume__title {
+  font-family: 'Coloplast-Bold', arial, sans-serif;
+  font-size: 18.5px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 344px;
+  border-bottom: 2px solid #dfe0e0;
+  padding-bottom: 28px;
+}
+.progress-bar--left {
+  float: left;
+}
+.progress-bar--right {
+  float: right;
+}
+.progress-bar__bar {
+  position: relative;
+  border-radius: 100px;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 13.5px;
+  overflow: hidden;
+  margin: 10px 0;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.progress-bar__stripe {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #00b0ca;
+  left: 0;
+  -webkit-animation: animate-positive 3s;
+  animation: animate-positive 3s;
+}
+.progress-bar__label {
+  text-align: center;
+  font-family: 'Roboto-Regular', sans-serif;
+  color: #2e3233;
+  font-size: 16px;
+}
+.progress-bar__label--min,
+.progress-bar__label--max {
+  color: #6c6f70;
+  font-size: 13.5px;
+}
+.progress-bar__label--min {
+  float: left;
+}
+.progress-bar__label--max {
+  float: right;
+}
+.progress-bar__degrees {
+  height: 7px;
+  width: 99%;
+  margin: 0 auto 10px;
+}
+.progress-bar__degree {
+  display: block;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 11.11%;
+  height: 100%;
+  border-left: 2px solid #dfe0e0;
+}
+.progress-bar__degree:last-child {
+  border-right: 2px solid #dfe0e0;
+}
+
+.urine-color,
+.leakage,
+.uti {
+  margin-top: 32px;
+  line-height: 26.5px;
+}
+.urine-color__title,
+.leakage__title,
+.uti__title {
+  font-family: 'Coloplast-Bold', arial, sans-serif;
+  font-size: 18.5px;
+  margin-bottom: 8px;
+}
+.urine-color__wrapper,
+.leakage__wrapper,
+.uti__wrapper {
+  border-bottom: 1px solid #dfe0e0;
+  margin-bottom: 21px;
+}
+.urine-color__label,
+.leakage__label,
+.uti__label {
+  width: 110px;
+  float: left;
+  color: #6c6f70;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 13.5px;
+}
+.urine-color__measures,
+.leakage__measures,
+.uti__measures {
+  float: left;
+  padding-bottom: 25px;
+}
+.urine-color__number,
+.leakage__number,
+.uti__number {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 16px;
+  color: #2e3233;
+}
+.urine-color__color-wrapper,
+.leakage__color-wrapper,
+.uti__color-wrapper {
+  border: 1px solid #e2e2e2;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 9px;
+  margin-top: -2px;
+  vertical-align: middle;
+  position: relative;
+}
+.urine-color__color,
+.leakage__color,
+.uti__color {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  position: absolute;
+  top: 16%;
+  left: 16%;
+}
+.urine-color__color--first,
+.leakage__color--first,
+.uti__color--first {
+  background-color: #fbf8cd;
+}
+.urine-color__color--second,
+.leakage__color--second,
+.uti__color--second {
+  background-color: #faeaab;
+}
+.urine-color__color--third,
+.leakage__color--third,
+.uti__color--third {
+  background-color: #f6d359;
+}
+.urine-color__color--forth,
+.leakage__color--forth,
+.uti__color--forth {
+  background-color: #f6bc07;
+}
+.urine-color__color--fifth,
+.leakage__color--fifth,
+.uti__color--fifth {
+  background-color: #f3a104;
+}
+.urine-color__color--sixth,
+.leakage__color--sixth,
+.uti__color--sixth {
+  background-color: #eb8405;
+}
+.urine-color__color--seventh,
+.leakage__color--seventh,
+.uti__color--seventh {
+  background-color: #de770d;
+}
+.urine-color__color--eighth,
+.leakage__color--eighth,
+.uti__color--eighth {
+  background-color: #bb6417;
+}
+
+.leakage__title,
+.uti__title {
+  margin-bottom: 16px;
+}
+
+.leakage__label,
+.uti__label {
+  font-weight: bold;
+  background-color: #f4f4f4;
+  width: 66px;
+  height: 26.5px;
+  line-height: 26.5px;
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 44px;
+}
+
+.leakage__icon,
+.uti__icon {
+  width: 21px;
+  height: 21px;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+
+.leakage__number,
+.uti__number {
+  height: 25px;
+}
+
+.leakage__desc,
+.uti__desc {
+  line-height: 25px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.uti {
+  margin-bottom: 80px;
+}
+.uti__label {
+  vertical-align: top;
+}
+.uti__desc {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 16px;
+  color: #2e3233;
+  opacity: 0.9;
+  padding-bottom: 20px;
+}
+.uti__symptom--s {
+  color: #6c6f70;
+  font-size: 13.5px;
+}
+
+    </style>
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <title>Coloplast</title>
   </head>
 
