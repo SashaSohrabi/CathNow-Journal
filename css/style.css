@@ -96,9 +96,7 @@ tr.margin-top td {
     height: 100%;
     overflow: hidden;
     background: #00b0ca;
-    left: 0;
-    -webkit-animation: animate-positive 3s;
-    animation: animate-positive 3s; }
+    left: 0; }
   .progress-bar__label {
     text-align: center;
     font-family: 'Roboto-Regular', sans-serif;
