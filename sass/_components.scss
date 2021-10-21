@@ -11,6 +11,12 @@
     font-size: 16px;
     margin-bottom: 42px;
   }
+  .avg-volume,
+  .urine-color,
+  .leakage,
+  .uti {
+    margin-bottom: 100vh;
+  }
 }
 
 .avg-volume {
@@ -141,8 +147,9 @@
     height: 11px;
     border-radius: 50%;
     position: absolute;
-    top: 16%;
-    left: 16%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     &--first {
       background-color: $double-pearl-lusta;
     }
