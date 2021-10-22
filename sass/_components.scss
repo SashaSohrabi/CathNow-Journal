@@ -147,11 +147,15 @@
   }
 }
 
+.avg-volume__progress-bar.progress-bar {
+  margin-bottom: 0;
+}
+
 // Urine color, Leakage
 .urine-color,
 .leakage,
 .uti {
-  margin-top: 50px;
+  margin-top: 60px;
   line-height: 26.5px;
   &__title {
     font-family: 'Coloplast-Bold', arial, sans-serif;
@@ -228,9 +232,14 @@
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 13.5px;
     position: relative;
-    top: 20px;
-    left: -129px;
-    
+    top: 25px;
+    left: -129px; 
+  }
+  &__summary {
+    font-family: 'Coloplast-Bold', arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 10px;
   }
 }
 
