@@ -56,8 +56,11 @@ tr.margin-top td {
     width: 0%; } }
 
 .cath-now {
-  margin-top: 80px;
   color: #2e3233; }
+  .cath-now__logo {
+    width: 145px;
+    fill: #6f7175;
+    float: right; }
   .cath-now__title {
     font-family: 'Coloplast', arial, sans-serif;
     margin-bottom: 10px; }
@@ -66,15 +69,55 @@ tr.margin-top td {
     font-size: 16px;
     margin-bottom: 42px; }
 
-.avg-volume__title {
+.avg-volume__title,
+.voiding-frequency__title {
   font-family: 'Coloplast-Bold', arial, sans-serif;
   font-size: 18.5px;
   margin-bottom: 8px; }
 
+.voiding-frequency {
+  position: relative; }
+  .voiding-frequency__text {
+    float: left;
+    width: 275px;
+    font-family: 'Roboto-Regular', sans-serif;
+    color: #2e3233;
+    font-size: 13px;
+    color: #6c6f70;
+    padding-top: 5px; }
+  .voiding-frequency__progress-bar.progress-bar {
+    border-bottom: 0; }
+  .voiding-frequency__border {
+    height: 2px;
+    background-color: #dfe0e0;
+    position: relative;
+    top: -40px; }
+  .voiding-frequency__progress-bar {
+    position: relative; }
+    .voiding-frequency__progress-bar .progress-bar__degrees {
+      margin: 0;
+      height: 0; }
+    .voiding-frequency__progress-bar .progress-bar__degree {
+      border: 0;
+      width: 4px;
+      height: 13.5px;
+      position: absolute;
+      top: 10px;
+      transform: translate(-50%);
+      background-color: #ffffff; }
+      .voiding-frequency__progress-bar .progress-bar__degree:nth-child(1) {
+        left: 25%; }
+      .voiding-frequency__progress-bar .progress-bar__degree:nth-child(2) {
+        left: 50%; }
+      .voiding-frequency__progress-bar .progress-bar__degree:nth-child(3) {
+        left: 75%;
+        border: 0; }
+
 .progress-bar {
   width: 344px;
   border-bottom: 2px solid #dfe0e0;
-  padding-bottom: 28px; }
+  padding-bottom: 28px;
+  margin-bottom: 40px; }
   .progress-bar--left {
     float: left; }
   .progress-bar--right {
@@ -127,7 +170,7 @@ tr.margin-top td {
 .urine-color,
 .leakage,
 .uti {
-  margin-top: 32px;
+  margin-top: 40px;
   line-height: 26.5px; }
   .urine-color__title,
   .leakage__title,
