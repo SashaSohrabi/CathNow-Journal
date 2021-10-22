@@ -151,7 +151,7 @@
 .urine-color,
 .leakage,
 .uti {
-  margin-top: 40px;
+  margin-top: 50px;
   line-height: 26.5px;
   &__title {
     font-family: 'Coloplast-Bold', arial, sans-serif;
@@ -223,6 +223,15 @@
       background-color: $orange-roughy;
     }
   }
+  &__period {
+    color: $nevada;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 13.5px;
+    position: relative;
+    top: 20px;
+    left: -129px;
+    
+  }
 }
 
 // Leakage
@@ -262,7 +271,6 @@
 }
 
 .uti {
-  margin-bottom: 80px;
   &__label {
     vertical-align: top;
   }
@@ -276,5 +284,22 @@
   &__symptom--s {
     color: $nevada;
     font-size: 13.5px;
+  }
+}
+
+.user-input {
+  margin-top: 30px;
+  &__title {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 13.5px;
+    margin-bottom: 5px;
+    color: $outer-space;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+  &__description {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 13.5px;
+    color: $oslo-gray;
   }
 }

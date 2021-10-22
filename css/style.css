@@ -20,7 +20,8 @@ body {
 
 .container {
   max-width: 715px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 60px; }
 
 .clearfix::after {
   content: '';
@@ -42,7 +43,7 @@ tr.padding-top td {
   padding-top: 20px; }
 
 tr.padding-bottom td {
-  padding-bottom: 20px; }
+  padding-bottom: 35px; }
 
 tr.margin-top td {
   margin-top: 20px; }
@@ -170,7 +171,7 @@ tr.margin-top td {
 .urine-color,
 .leakage,
 .uti {
-  margin-top: 40px;
+  margin-top: 50px;
   line-height: 26.5px; }
   .urine-color__title,
   .leakage__title,
@@ -257,6 +258,15 @@ tr.margin-top td {
     .leakage__color--eighth,
     .uti__color--eighth {
       background-color: #bb6417; }
+  .urine-color__period,
+  .leakage__period,
+  .uti__period {
+    color: #6c6f70;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 13.5px;
+    position: relative;
+    top: 20px;
+    left: -129px; }
 
 .leakage__title,
 .uti__title {
@@ -290,16 +300,30 @@ tr.margin-top td {
   vertical-align: middle;
   font-size: 16px; }
 
-.uti {
-  margin-bottom: 80px; }
-  .uti__label {
-    vertical-align: top; }
-  .uti__desc {
+.uti__label {
+  vertical-align: top; }
+
+.uti__desc {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 16px;
+  color: #2e3233;
+  opacity: 0.9;
+  padding-bottom: 20px; }
+
+.uti__symptom--s {
+  color: #6c6f70;
+  font-size: 13.5px; }
+
+.user-input {
+  margin-top: 30px; }
+  .user-input__title {
     font-family: 'Roboto-Regular', sans-serif;
-    font-size: 16px;
+    font-size: 13.5px;
+    margin-bottom: 5px;
     color: #2e3233;
-    opacity: 0.9;
-    padding-bottom: 20px; }
-  .uti__symptom--s {
-    color: #6c6f70;
-    font-size: 13.5px; }
+    font-weight: 600;
+    opacity: 0.9; }
+  .user-input__description {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 13.5px;
+    color: #969899; }
