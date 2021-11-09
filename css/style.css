@@ -107,11 +107,15 @@ tr.margin-top td {
       transform: translate(-50%);
       background-color: #ffffff; }
       .voiding-frequency__progress-bar .progress-bar__degree:nth-child(1) {
-        left: 25%; }
+        left: 16.66%; }
       .voiding-frequency__progress-bar .progress-bar__degree:nth-child(2) {
-        left: 50%; }
+        left: 33.33%; }
       .voiding-frequency__progress-bar .progress-bar__degree:nth-child(3) {
-        left: 75%;
+        left: 49.49%; }
+      .voiding-frequency__progress-bar .progress-bar__degree:nth-child(4) {
+        left: 65.64%; }
+      .voiding-frequency__progress-bar .progress-bar__degree:nth-child(5) {
+        left: 81.8%;
         border: 0; }
 
 .progress-bar {

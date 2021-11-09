@@ -61,13 +61,19 @@
       transform: translate(-50%);
       background-color: $white;
       &:nth-child(1) {
-        left: 25%;
+        left: 16.66%;
       }
       &:nth-child(2) {
-        left: 50%;
+        left: 33.33%;
       }
       &:nth-child(3) {
-        left: 75%;
+        left: 49.49%;
+      }
+      &:nth-child(4) {
+        left: 65.64%;
+      }
+      &:nth-child(5) {
+        left: 81.8%;
         border: 0;
       }
     }
@@ -233,7 +239,7 @@
     font-size: 13.5px;
     position: relative;
     top: 25px;
-    left: -129px; 
+    left: -129px;
   }
   &__summary {
     font-family: 'Coloplast-Bold', arial, sans-serif;
